@@ -25,7 +25,7 @@ class System {
 		 * in the array up to the apostrophe
 		 */
 		$temp = system('/opt/vc/bin/vcgencmd measure_temp');
-		$temp = explode('='. $temp);
+		$temp = explode('=', $temp);
 
 		return substr($temp[1], 0, strpos($temp[1], "'"));
 	}
